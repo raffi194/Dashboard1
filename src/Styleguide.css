@@ -1,0 +1,46 @@
+:root {
+    --hitam: #161616;
+    --putih: #F2F2F3;
+    --putihtransparan: #F2F2F31A;
+    --ijo: #389C9A;
+    --shadowitem: rgba(22, 22, 22, 0.8);
+    --abuabu: #A59E9E;
+    --hitamkurang: #0000002F;
+    --orange: #DD6737;
+    --ijocap: #219B9D;
+    --hoverijo: #147D7B;
+    --coklat: #C47600;
+    --grey: #585656;
+    --merah: #F43434;
+    --biru: #BAEFFB;
+    --kuning: #FFE460;
+    
+  }
+
+  @keyframes rotate-phone {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .animate-rotate-phone {
+    animation: rotate-phone 4s infinite;
+  }
+  
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
