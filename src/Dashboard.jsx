@@ -56,14 +56,15 @@ const Dashboard = () => {
       <div className="flex-1 flex flex-col">
         <Header />
         <div className="p-4 md:p-6 flex-1 overflow-auto">
-          <Routes>
-          <Route path="/" element={<IsiDashboard />} />
-          <Route path="/Isidashboard" element={<IsiDashboard />} />
-            <Route path="/EditProfile" element={<EditProfile />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/users" element={<Users />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<IsiDashboard />} /> {/* Default ke IsiDashboard */}
+          <Route path="Isidashboard" element={<IsiDashboard />} />
+          <Route path="editprofile" element={<EditProfile />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="users" element={<Users />} />
+          <Route path="settings" element={<Settings />} />
+        </Routes>
+
         </div>
       </div>
     </div>
