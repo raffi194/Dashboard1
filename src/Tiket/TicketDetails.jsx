@@ -3,7 +3,7 @@ import React from 'react';
 const TicketDetails = () => {
   return (
     <div className="flex flex-col flex-grow items-center px-10">
-      <span className="font-bold text-xs text[--putih]">SI 23</span>
+      <span className="font-bold text-xs text-[--putih]">SI 23</span>
       <div className="w-full flex items-center mt-2">
         <div className="w-3 h-3 rounded-full border-2 border-[--hitam]" />
         <div className="flex-grow border-t-2 border-[--ijo] border-dotted h-px" />

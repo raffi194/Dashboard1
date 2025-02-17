@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const TicketDeparture = ({ setInstitution }) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleInput = (e) => {
-    const value = e.target.value.toUpperCase().slice(0, 5); // Batasi 5 karakter
+    const value = e.target.value.toUpperCase();
     setInputValue(value);
-
-    if (typeof setInstitution === 'function') { 
-      setInstitution(value); // Hanya panggil jika setInstitution adalah fungsi
-    }
   };
+
+  useEffect(() => {
+    if (typeof setInstitution === 'function') {
+      setInstitution(inputValue);
+    }
+  }, [inputValue, setInstitution]);
 
   return (
     <div className="flex flex-col items-center">

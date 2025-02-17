@@ -57,8 +57,8 @@ const Dashboard = () => {
         <Header />
         <div className="p-4 md:p-6 flex-1 overflow-auto">
           <Routes>
-            <Route path="/" element={<Navigate to="/Isidashboard" replace />} />
-            <Route path="/Isidashboard" element={<IsiDashboard />} />
+          <Route path="/" element={<IsiDashboard />} />
+          <Route path="/Isidashboard" element={<IsiDashboard />} />
             <Route path="/EditProfile" element={<EditProfile />} />
             <Route path="/Projects" element={<Projects />} />
             <Route path="/users" element={<Users />} />
